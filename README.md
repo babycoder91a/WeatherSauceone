@@ -1,5 +1,5 @@
 # WeatherSauceone
-Weather One 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -199,6 +199,7 @@ Weather One
         color: #4c6ef5;
       }
     </style>
+
   </head>
   <body>
     <div class="weather-container">
@@ -264,7 +265,7 @@ Weather One
                 <div class="weather-cards">
                   ${forecastDays
                     .map(
-                      (day) => ` 
+                      (day) => `
                     <div class="city-weather">
                         <h3>${new Date(day.date).toLocaleDateString()}</h3>
                         <div class="temperature">${day.day.avgtemp_c}°C</div>
@@ -303,5 +304,6 @@ Weather One
           }
         });
     </script>
+
   </body>
 </html>
